@@ -1,0 +1,36 @@
+{
+  "id": "header",
+  "name": "Header",
+  "button": {
+    "btnLogin": { "text": "Увійти", "link": "#" },
+    "btnReg": { "text": "Зареєструватися", "link": "#" },
+    "ariaMobileMenu": "кнопка мобільного меню"
+  },
+
+  "nav": [
+    {
+      "id": "1",
+      "label": "Умови",
+      "url": "/#conditions",
+      "scrollId": "conditions"
+    },
+    {
+      "id": "2",
+      "label": "Ми пропонуємо",
+      "url": "/#proposition",
+      "scrollId": "proposition"
+    },
+    {
+      "id": "3",
+      "label": "Відгуки",
+      "url": "/#feedback",
+      "scrollId": "feedback"
+    },
+    {
+      "id": "4",
+      "label": "FAQ",
+      "url": "/#faq",
+      "scrollId": "faq"
+    }
+  ]
+}

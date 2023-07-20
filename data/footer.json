@@ -1,0 +1,52 @@
+{
+  "edges": {
+    "id": "footer",
+    "name": "Footer",
+    "menuItems": [
+      {
+        "id": "1",
+        "label": "Що потрібно",
+        "url": "description"
+      },
+      {
+        "id": "2",
+        "label": "Як проходить",
+        "url": "process"
+      },
+      {
+        "id": "3",
+        "label": "Відгуки",
+        "url": "feedback"
+      },
+      {
+        "id": "4",
+        "label": "FAQ",
+        "url": "faq"
+      }
+    ]
+  },
+
+  "internship": {
+    "title": "Стажування",
+    "directions": [
+      { "name": "Frontend", "path": "/frontend" },
+      { "name": "Backend", "path": "/backend" },
+      { "name": "UX/UI design", "path": "/design" },
+      { "name": "QA", "path": "/qa" },
+      { "name": "PM", "path": "/pm" }
+    ]
+  },
+  "contacts": {
+    "title": "Контакти",
+    "email": "o.kuznietsova@softryzen.com",
+    "telegram": {
+      "title": "@Kuznietsova_Oksana",
+      "url": "https://t.me/Kuznietsova_Oksana"
+    }
+  },
+  "policy": {
+    "text": "Terms of Service & Privacy Policy",
+    "url": "https://softryzen.com/privacy-policy"
+  },
+  "copyright": "All Rights Reserved SoftRyzen.com"
+}

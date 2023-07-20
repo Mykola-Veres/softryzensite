@@ -1,0 +1,24 @@
+{
+  "socials": {
+    "behance": {
+      "title": "Behance",
+      "url": "https://www.behance.net/softryzen",
+      "label": "Посилання на Behance"
+    },
+    "instagram": {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/softryzen/",
+      "label": "Посилання на Instagram"
+    },
+    "linkedin": {
+      "title": "Linkedin",
+      "url": "https://www.linkedin.com/company/softryzen",
+      "label": "Посилання на Linkedin"
+    },
+    "dou": {
+      "title": "Dou",
+      "url": "https://jobs.dou.ua/companies/softryzen/",
+      "label": "Посилання на Dou"
+    }
+  }
+}

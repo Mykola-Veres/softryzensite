@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white_light font-sans font-normal text-dark;
+  }
+}
+
+@layer components {
+  /* Classes for header */
+  .sticky .header-logo {
+    @apply py-5 xl:py-2;
+  }
+  .sticky .menu-scroll.active {
+    @apply opacity-70;
+  }
+  /* End classes fo header */
+}
+
+/* ======== Partner-section =========== */
+.partner-section {
+  background-image: url('/images/partners/circle-left.svg'),
+    url('/images/partners/circle-right.svg');
+  background-repeat: no-repeat;
+  background-position: bottom -3px left calc(50% - 177px),
+    top -3px right calc(50% - 177px);
+  background-size: 250px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .partner-section {
+    background-position: bottom -3px left calc(50% - 345px),
+      top -3px left calc(50% - -360px);
+    background-size: 505px auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .partner-section {
+    background-position: bottom -2px left calc(50% - 532px),
+      top -2px right calc(50% - 594px);
+    background-size: 716px auto;
+  }
+}
+
+/* ====================================== */
+
+/* Start classes for slider */
+.dots {
+  @apply flex justify-center;
+}
+.dot {
+  @apply h-[2px] w-full rounded-sm bg-disabled;
+}
+.dots .active {
+  @apply bg-primary;
+}
+
+.program-slider .dot {
+  @apply bg-white opacity-[37%];
+}
+.program-slider .dots .active {
+  @apply bg-white opacity-100;
+}
+.keen-slider__slide {
+  @apply h-[380px] w-[320px] md:w-[336px] xl:h-[400px] xl:w-[392px];
+}
+.program-slider .keen-slider__slide {
+  @apply h-[296px] w-[280px];
+}
+
+.gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(37, 101, 208, 0) 37.25%,
+    #2565d0 117.25%
+  );
+}
+/* End classes for slider */
+/* Start classes for tabs */
+.tab-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d6dfe6;
+}
+
+@media screen and (min-width: 768px) {
+  .tab-section-title::after {
+    display: block;
+    bottom: -16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .tab-section-title::after {
+    display: block;
+    bottom: -16px;
+  }
+}
+
+.tab-card::after {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d6dfe6;
+}
+
+.tab-card:last-child::after {
+  display: none;
+}
+/* End classes for tabs */
+
+/* Start classes for 404 page */
+.notFound {
+  background-image: url('/images/404/bg-mob.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+@media screen and (min-width: 1280px) {
+  .notFound {
+    background-image: url('/images/404/bg.svg');
+    background-size: 1302px auto;
+  }
+}
+/* End classes for 404 page */
+/* Start classes for workWithUs */
+
+@media screen and (min-width: 768px) {
+  .workWithUs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 900px;
+    border-left: 1px solid #d6dfe6;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .workWithUs::before {
+    height: 972px;
+  }
+}
+
+/* End classes for workWithUs */
+/* Start classes for you get card */
+.get-card--top::before {
+  content: '';
+
+  position: absolute;
+  top: -3px;
+  left: -3px;
+
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #2565d0;
+
+  z-index: 1;
+}
+.get-card--top::after {
+  content: '';
+
+  position: absolute;
+  top: -3px;
+  right: -3px;
+
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #2565d0;
+
+  z-index: 1;
+}
+
+.get-card--bottom::before {
+  content: '';
+
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
+
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #2565d0;
+
+  z-index: 1;
+}
+.get-card--bottom::after {
+  content: '';
+
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #2565d0;
+
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .get-card:nth-last-child(2) {
+    border-bottom: 1px solid #d6dfe6;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .get-card:nth-last-child(-n + 4) {
+    border-bottom: 1px solid #d6dfe6;
+  }
+  /* .get-card:nth-child(4n + 2) {
+    border-right: 0;
+  } */
+}
+/* End classes for you get card */
+
+/* Start classes for react-scroll */
+@media screen and (min-width: 1280px) {
+  a.active {
+    color: #2565d0;
+  }
+}
+
+/* End classes for react-scroll */
+
+@media screen and (min-width: 1280px) {
+  .border-revievs::after {
+    content: '';
+    position: absolute;
+    width: 106%;
+    height: 2px;
+    background-color: #d6dfe6;
+    left: -10px;
+    bottom: -60px;
+  }
+}
